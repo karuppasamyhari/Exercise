@@ -1,0 +1,6 @@
+e=str(input("enter a string"))
+h=e.split(" ")
+for i in h:
+    j=len(i)
+    if j%2==0:
+        print(i)
