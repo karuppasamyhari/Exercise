@@ -1,0 +1,6 @@
+import re
+String_input = input()
+if re.search('.*(.).*\1+.*',String_input):
+    print("Valid")
+else:
+    print("Non-Valid")
