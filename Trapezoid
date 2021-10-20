@@ -1,0 +1,22 @@
+
+def perimeter(a,b,c,d):
+
+        return a+b+c+d
+        
+def area(x,y,z):
+
+    return ((x+y)/2)*z
+
+
+
+if __name__ == '__main__':
+
+    Lenght_of_parallel_side_A, Lenght_of_parallel_side_B =  [ float (x) for x in input() .split() ]
+    
+    Lenght_of_non_parallel_side_A, Lenght_of_non_parallel_side_B = [ float (y) for y in input() .split() ]
+    
+    Height_of_the_trapezoid = float(input())
+    
+    print(perimeter(Lenght_of_parallel_side_A, Lenght_of_parallel_side_B,Lenght_of_non_parallel_side_A, Lenght_of_non_parallel_side_B),"units")
+    
+    print(area(Lenght_of_parallel_side_A, Lenght_of_parallel_side_B,Height_of_the_trapezoid),"units")
