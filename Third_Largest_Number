@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int size_of_array,temp;
+        Scanner given = new Scanner(System.in);
+        size_of_array = given.nextInt();
+        int[] array_1 = new int[size_of_array];
+        for (int intialization = 0; intialization < size_of_array; intialization++) {
+            array_1[intialization] = given.nextInt();
+        }
+
+        for (int initialization = 0; initialization < size_of_array ;initialization++ ){
+            for (int initialization_1 = initialization+1; initialization_1< size_of_array; initialization_1++){
+                if (array_1[initialization]<array_1[initialization_1]){
+                    temp = array_1[initialization];
+                    array_1[initialization] = array_1[initialization_1];
+                    array_1[initialization_1] = temp;
+
+                }
+            }
+            System.out.print("\t"+array_1[initialization]+"\n");
+        }
+        
+        System.out.println("Third largest element is:: "+array_1[2]);
+
+    }
+}
