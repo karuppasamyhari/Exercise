@@ -1,0 +1,52 @@
+//
+Input = 10
+
+1 2 3 4 5 6 7 8 9 10 
+
+ 1 2 3 4 5 6 7 8 9   
+
+  1 2 3 4 5 6 7 8    
+
+   1 2 3 4 5 6 7
+
+    1 2 3 4 5 6
+
+     1 2 3 4 5
+
+      1 2 3 4
+
+       1 2 3
+
+        1 2
+
+         1
+//
+import java.util.Scanner;
+
+public class Pattern1 {
+    public static void main(String [] args) {
+        int input;
+        int row,col;
+        int space;
+        int col_input;
+        Scanner sc = new Scanner(System.in);
+        input = sc.nextInt();
+        col_input = input;
+        for(row = 1; row <= input; row += 1){
+            if(row > 1)
+            {
+                for(space = 1; space <= row - 1; space += 1){
+                    System.out.print(" ");
+                }
+            }
+            for(col = 1; col <= col_input; col += 1){
+                System.out.print(col+" ");
+            }
+            col_input -= 1;
+            System.out.println("\n");
+
+        }
+        
+
+    }
+}
