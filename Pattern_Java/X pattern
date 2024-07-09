@@ -1,0 +1,57 @@
+         \*******/
+         *\*****/*
+         **\***/**
+         ***\*/***
+         ****/****
+         ***/*\***
+         **/***\**
+         */*****\*
+         /*******\
+
+
+
+
+        int n = 4;
+        for(int i = n; i >= 1; i -= 1) {
+            int space1 = n - i;
+            for (int j = 1; j <= space1; j += 1){
+                System.out.print("*");
+            }
+            System.out.print("\\");
+            int space2= (2*i) - 1;
+            for (int j = space2; j >= 1; j -= 1){
+                System.out.print("*");
+            }
+            System.out.print("/");
+            int space3 = n - i;
+            for (int j = 1; j <= space3; j += 1){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i = 1; i <= n; i += 1) {
+            System.out.print("*");
+        }
+        System.out.print("/");
+        for(int i = 1; i <= n; i += 1) {
+            System.out.print("*");
+        }
+        System.out.println();
+
+        for(int i = 1; i <= n; i += 1) {
+            int space1 = n - 1;
+            for (int j = i; j <= space1; j += 1){
+                System.out.print("*");
+            }
+            System.out.print("/");
+            int space2= (2*i) - 1;
+            for (int j = 1; j <= space2; j += 1){
+                System.out.print("*");
+            }
+            System.out.print("\\");
+            int space4 = n - 1;
+            for (int j = i; j <= space4; j += 1){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
